@@ -1,11 +1,24 @@
-import java.util.Arrays;
-
 class Solution {
     public boolean isAnagram(String s, String t) {
-       char[] start =s.toCharArray();
-       char [] end =t.toCharArray();
-       Arrays.sort(start);
-       Arrays.sort(end);
-       return Arrays.equals(start,end);
+        int[] count = new int[26];
+        
+       
+        for (char x : s.toCharArray()) {
+            count[x - 'a']++;
+        }
+        
+        
+        for (char x : t.toCharArray()) {
+            count[x - 'a']--;
+        }
+        
+        
+        for (int val : count) {
+            if (val != 0) {
+                return false;
+            }
+        }
+        
+        return true;
     }
-} 
+}
