@@ -5,7 +5,6 @@ class Solution {
         if (nums.length == 0) return 0;
         
         Arrays.sort(nums);
-
         int count = 1;
         int maxCount = 1;
 
