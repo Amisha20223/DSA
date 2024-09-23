@@ -31,7 +31,7 @@ public class Solution {
         int right = helper(root.right);
         diameter = Math.max(diameter, left + right);
         
-        return Math.max(left, right) + 1;
+        return Math.max(left, right)+1;
     }
 }
               
