@@ -7,7 +7,7 @@ class Solution {
                 if(i!=0)
                  sb.append(" ");
         }  }
-          return sb.toString(); 
+          return sb.toString();
     } 
 }
   
